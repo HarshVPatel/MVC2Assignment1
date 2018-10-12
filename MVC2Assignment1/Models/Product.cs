@@ -11,5 +11,8 @@ namespace MVC2Assignment1.Models
         public string Name { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }
+
+        public ICollection<Customer> Customer { get; set; }
+
     }
 }
