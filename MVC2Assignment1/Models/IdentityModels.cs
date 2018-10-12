@@ -29,5 +29,15 @@ namespace MVC2Assignment1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MVC2Assignment1.Models.Sale> Sales { get; set; }
+
+        public System.Data.Entity.DbSet<MVC2Assignment1.Models.Employee> Employees { get; set; }
+
+        public System.Data.Entity.DbSet<MVC2Assignment1.Models.StoreLocation> StoreLocations { get; set; }
+
+        public System.Data.Entity.DbSet<MVC2Assignment1.Models.Customer> Customers { get; set; }
+
+        public System.Data.Entity.DbSet<MVC2Assignment1.Models.Product> Products { get; set; }
     }
 }
